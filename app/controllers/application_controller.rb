@@ -16,6 +16,8 @@ class ApplicationController < ActionController::Base
         nil
       end
     end
+    # To get authentication out of the way, comment out everything inside this method above and uncomment the line below to hard code the first user as current_user:
+    # current_user = User.first
   end
 
   helper_method :current_user
